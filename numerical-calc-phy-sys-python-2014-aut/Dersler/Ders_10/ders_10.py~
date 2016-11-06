@@ -1,0 +1,64 @@
+'''
+class Person:
+    # attributes (properties)
+    name = "No name yet"
+    age = 0
+
+    # methods
+    def setName(self, x):
+        self.name = x
+    
+    def setAge(self, x):
+        self.age = x
+
+    def talk(self):
+        print("Hi! My name is", self.name, "and I am", self.age, "years old.")
+
+myObject = Person()
+myObject.setName("Peter")
+myObject.setAge(22)
+myObject.talk()
+'''
+
+'''
+#Quiz 6
+class Car:
+    #attributes
+    maxSpeed = "200 km/h"
+    brand = "Anadol"
+
+    #methods
+    def setBrand(self, x):
+        self.brand = x
+
+    def setMaxSpeed(self, x):
+        self.maxSpeed = x
+
+    def printData(self):
+        print "an", self.brand, "with maximum speed", self.maxSpeed,"."
+
+#calling the object
+myObject = Car()
+myObject.setBrand("Audi")
+myObject.setMaxSpeed("300 km/h")
+myObject.printData()
+'''
+
+
+class Person2:
+    #attributes
+    name = "No name yet"
+    age = 0
+
+    #methods
+    def __init__(self,x,y):
+        self.name = x
+        self.age = y
+        print "You have just created a Person Object."
+
+def talk(self):
+    print "Hi! My name is", self.name, "and I am", self.age, "years old."
+'''
+objectMe= Person2()
+myObject.talk()
+'''

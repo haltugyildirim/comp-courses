@@ -1,0 +1,85 @@
+#Basic Constructions in Python
+#if statement
+
+'''
+a=input("Enter a number")
+
+if a<5:
+    print "The number is less than 5"
+
+print "thank you for using python"
+'''
+'''
+var=100
+if(var==100):print "Value is 100"
+print "Bye"
+'''
+
+'''
+a=input("Enter a number")
+if a<5:
+    print "number is smaller than 5"
+
+elif a==5:
+    print "number is 5"
+else:
+    print "the number is bigger than 5"
+
+print "bye"
+'''
+
+'''
+num1=input("Enter number 1")
+num2=input("Enter number 2")
+
+
+if num1<num2 and num1<0:
+    print "Number 1 is smaller than number 2 and negative"
+
+print "bye"
+'''
+
+'''
+a,b=2,3
+if not(a==b):
+    print "they are not equal"
+'''
+'''
+#range command
+print range(1,10)
+print range(1,10,3)
+
+for i in range(1,10):
+    print i
+
+for i in range(1,10,2):
+    print i
+'''
+
+'''
+languages=['C++',"Lojban",'Fortran']
+
+for index in range(len(languages)):
+    print 'I learned', languages[index]
+
+for i in range(1,10):
+    for j in range(1,10):
+        print i,"times",j,"is equals to",i*j
+'''
+
+'''
+#while statement
+#while=for+if
+
+count=1
+while(count<11):
+    print 'The count is:', count
+    count=count+1
+print "Bye"
+'''
+#continue command
+for number in range(0,10):
+    if number==5:
+        continue
+    print 'Current number:',number
+

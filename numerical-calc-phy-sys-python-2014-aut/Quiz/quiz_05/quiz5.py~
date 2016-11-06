@@ -1,0 +1,24 @@
+from pylab import *
+
+S=[0.09]
+I=[0.01]
+R=[0.00]
+a=0.7
+b=0.2
+t=[0]
+sum=R(i+1)+I(i+1)+S(i+1)
+for t in range(0,49):
+    S.append(S(i)-a*I(i)*S(i))
+    I.append(I(i)+a*I(i)*S(i))
+    R.append(R(i)+b*I(i))
+    t.append(t(i+1))
+    if  sum =< 1.1 or sum => 0.9:
+        continue
+    else:
+        print "Check the initial conditions, please!"
+        break
+xlabel('time')
+ylabel('Susceptible')
+plot(S,t)
+title('Plot of Susceptible versus time')
+show()

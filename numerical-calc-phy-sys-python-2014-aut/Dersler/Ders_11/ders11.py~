@@ -1,0 +1,27 @@
+class Vehicle:
+    def __init__(self, speed, maxSpeed):
+        self .speed = speed
+        self.maxSpeed = maxSpeed
+        print("You have just created a vehicle.")
+
+    def accelerate(self,x):
+        self.speed = self.speed + x
+        if(self.speed > self.maxSpeed):
+            self.speed = self.maxSpeed
+
+    def status(self):
+        print("The speed of the vehicle is", self.speed, end=" km/h.")
+
+class Motorcycle(Vehicle):
+    #aditional attributes
+    widthFrontTire = 95
+    widthRearTire = 95
+
+    def setWidthTires(self, front, rear):
+        self.widthFrontTire = front
+        self.widthRearTire =rear
+        print("You have just put on some tires.")
+
+    def printTireInfo(self):
+        print("Width of front tire:", self.widthFrontTire, "mm.")
+        print("Width of rear tire:", self.widthRearTire, "mm.")

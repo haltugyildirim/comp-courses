@@ -1,0 +1,12 @@
+#Matrix Operations
+
+#Use numpy
+'''
+import numpy
+import numpy as np
+from numpy import *
+'''
+
+a=np.array([1,2,5,8], float)
+print a
+type(a)
